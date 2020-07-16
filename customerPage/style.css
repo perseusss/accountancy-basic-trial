@@ -1,0 +1,140 @@
+body 
+{
+    margin : 0;
+    padding : 0;
+    display : flex;
+    flex-direction:column;
+}
+   .topBox
+   {
+       height: 60px; 
+       width:100%;
+       background-color: black;
+       display: flex;
+       justify-content: center;
+   }
+   .titleMid
+   {
+   color:white;
+   position:absolute;
+   left:42%;
+   top:-11px;
+   font-family: Arial;
+   }
+   .plusBtn
+   {
+       position:absolute;
+         height: 40px;
+         width:40px;
+         background-color: black;
+         right:5px;
+         top:3px;
+         border:none;    
+   }
+   .plusPhoto
+   {
+       margin-top:12px;
+       height: 30px;
+       width:30px;
+   }
+   .boxOne{
+       margin: 58px;
+       height: 400px;
+       width: 190px;
+       border: 10px solid #d1d2d4;
+       border-bottom-width:60px ;
+       padding: 10px;
+       background-color:#bcbcbf ;
+       border-radius: 20px;
+   }
+   .profilePhoto
+   {
+     height: 90px;
+     width:90px;
+     margin-top: -520px;
+     margin-left:130px;
+     background-color:#292425;
+   }
+   .line
+   {
+   margin-top:135px;
+   width:140px;
+   height:0.3px;
+   background-color: white;
+   }
+   .userName
+   {
+   margin-top:-34px;
+   text-align: center;
+   }
+   .companyName
+   {
+       text-align: center;
+   }
+   .paymentInfo
+   {
+       height: 170px;
+       width:180px;
+       margin-top:80px;
+       margin-left:83px;
+       background-color:white;
+       border-radius: 20px;
+   }
+   .totalInfo
+   { 
+       height: 30px;
+       width:180px;
+       margin-top:15px;
+       margin-left:83px;
+       background-color:white;
+       border-radius: 20px;
+   }
+   .boxTwo
+   {
+       margin: 58px;
+       height: 465px;
+       width: 600px;
+       padding: 10px;
+       margin-left:340px;
+       margin-top:-410px;
+       padding: 10px;
+       background-color:rgb(209,212,213) ;
+       border-radius: 20px;
+   
+   }
+   .customers
+   {
+    height: 45px;
+    width: 35%;
+    margin-left:40px;
+    margin-bottom:3%;
+    background-color:rgb(167,170,173) ;
+    border-radius: 10px;
+    padding-bottom:10px;
+   }
+   .infoPhoto
+   {
+    border:none; 
+   }
+   .calculator
+   {   
+       position: absolute;
+       width:30%;
+       height:40%;
+       z-index:2; 
+       margin-top: 5%;
+       margin-left: 5%; 
+
+   }
+   .btninfo
+   {
+       
+       margin-top:8px;
+       margin-left:5px;
+   }
+   .allcustomers{
+      position: absolute;
+      width:55%;
+      margin-top: 5%;
+      z-index:6;
+   }

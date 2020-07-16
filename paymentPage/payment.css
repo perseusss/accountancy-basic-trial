@@ -1,0 +1,326 @@
+body 
+{
+    margin : 0;
+    padding : 0;
+    display : flex;
+    flex-direction:column;
+}
+   .topBox
+   {
+       height: 60px; 
+       width:100%;
+       background-color: black;
+       display: flex;
+       justify-content: center;
+   }
+   .titleMid
+   {
+   color:white;
+   position:absolute;
+   left:42%;
+   top:-11px;
+   font-family: Arial;
+   }
+   .plusBtn
+   {
+       position:absolute;
+         height: 40px;
+         width:40px;
+         background-color: black;
+         right:5px;
+         top:3px;
+         border:none;    
+   }
+   .plusPhoto
+   {
+       margin-top:12px;
+       height: 30px;
+       width:30px;
+   }
+   .boxOne{
+       margin: 58px;
+       height: 400px;
+       width: 190px;
+       border: 10px solid #d1d2d4;
+       border-bottom-width:60px ;
+       padding: 10px;
+       background-color:#bcbcbf ;
+       border-radius: 20px;
+   }
+   .profilePhoto
+   {
+     height: 90px;
+     width:90px;
+     margin-top: -520px;
+     margin-left:130px;
+     background-color:#292425;
+   }
+   .line
+   {
+   margin-top:135px;
+   width:140px;
+   height:0.3px;
+   background-color: white;
+   }
+   .userName
+   {
+   margin-top:-34px;
+   text-align: center;
+   }
+   .companyName
+   {
+       text-align: center;
+   }
+   .paymentInfo
+   {
+       height: 170px;
+       width:180px;
+       margin-top:80px;
+       margin-left:83px;
+       background-color:white;
+       border-radius: 20px;
+   }
+   .totalInfo
+   { 
+       height: 30px;
+       width:180px;
+       margin-top:15px;
+       margin-left:83px;
+       background-color:white;
+       border-radius: 20px;
+   }
+   .boxTwo
+   {
+       margin: 58px;
+       height: 470px;
+       width: 600px;
+       padding: 10px;
+       margin-left:340px;
+       margin-top:-410px;
+       padding: 10px;
+       background-color:rgb(209,212,213) ;
+       border-radius: 20px;
+   
+   }
+   .compName{
+    height: 45px;
+    width: 40%;
+    margin-left:40px;
+    margin-bottom:3%;
+    background-color:rgb(167,170,173) ;
+    border-radius: 10px;
+    padding-bottom:10px;
+
+}
+  .calculator
+   {   
+       position: absolute;
+       width:30%;
+       height:40%;
+       z-index:1; 
+       margin-top: 5%;
+       margin-left: 5%; 
+
+   }
+  .paymentInfo{
+    height: 170px;
+    width:180px;
+    margin-top:80px;
+    margin-left:83px;
+    background-color:white;
+    border-radius: 20px;
+    
+  }.extrainfos{
+    position: absolute;
+    height: 80px;
+       width:240px;
+       margin-top:0%;
+       margin-left:40px;
+       background-color:white;
+       border-radius: 10px;
+       z-index:10;
+
+  }
+  .notes{
+      position: absolute;
+    height: 230px;
+       width:240px;
+       margin-top:7%;
+       margin-left:40px;
+       background-color:white;
+       border-radius: 10px;
+       z-index:10;
+   }
+   .buttons{
+    position:absolute;
+    height: 40px;
+    width:40px;
+    
+    right:35%;
+    top:17%;
+    border:none;    
+   }.getpaymentbtn{
+    position:absolute;
+    height: 70px;
+    width:70px;
+    background-color: rgb(209,212,213);
+    left:-90px;
+    top:17%;
+    border:none;
+    z-index: 10;
+    border-radius: 10px;
+   }.topaymentbtn{
+    position:absolute;
+    height: 70px;
+    width:70px;
+    background-color: rgb(209,212,213);
+    left:-170px;
+    top:17%;
+    border:none;
+    z-index: 10;
+    border-radius: 10px;
+   }.addnotesbtn{
+    position:absolute;
+    height: 70px;
+    width:70px;
+    background-color: rgb(209,212,213);
+    right:-20px;
+    top:17%;
+    border:none;
+    z-index: 10;
+    border-radius: 10px;
+   }.leftpaymentlist{
+    position: absolute;
+    height: 315px;
+       width:240px;
+       margin-top:-32%;
+       margin-left:50%;
+       background-color:white;
+       border-radius: 10px;
+       z-index:10;
+
+} /* Popup (arka plan) */
+.modal {
+    display: none; /* Varsayılan olarak gizlidir */
+    position: fixed; /* Yerinde kal */
+    z-index: 40; /* Üstte */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ful Genişlik */
+    height: 100%; /* Ful Yükseklik */
+    overflow: auto; /* Gerekirse kaydırmayı etkinleştir */
+    background-color: rgb(0,0,0); /* Yedek renk */
+    background-color: rgba(0,0,0,0.4); /* Siyah w / opaklık */
+  
+    
+}.modal2{
+    display: none; /* Varsayılan olarak gizlidir */
+    position: fixed; /* Yerinde kal */
+    z-index: 40; /* Üstte */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ful Genişlik */
+    height: 100%; /* Ful Yükseklik */
+    overflow: auto; /* Gerekirse kaydırmayı etkinleştir */
+    background-color: rgb(0,0,0); /* Yedek renk */
+    background-color: rgba(0,0,0,0.4); /* Siyah w / opaklık */
+
+}.modal3{
+    display: none; /* Varsayılan olarak gizlidir */
+    position: fixed; /* Yerinde kal */
+    z-index: 40; /* Üstte */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ful Genişlik */
+    height: 100%; /* Ful Yükseklik */
+    overflow: auto; /* Gerekirse kaydırmayı etkinleştir */
+    background-color: rgb(0,0,0); /* Yedek renk */
+    background-color: rgba(0,0,0,0.4); /* Siyah w / opaklık */
+
+}
+/* İçerik / Kutu */
+.modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    height:45%;
+    width: 30%;
+    left:30%;
+    top:25%;
+    border-radius:15px;
+   
+}
+.close {
+    position: fixed;
+    right: 41%;
+    top: 28%;
+    
+}.crossImage{
+    position: fixed;    
+    right: 41%;
+    top: 28%;
+}   
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.titlePayment{
+text-align: center;
+}.inputBox{
+    position: absolute;
+    height:13%;
+    width:65%;
+    left:20%;
+    top:20%;
+    background-color: rgb(209,212,213);
+    border:none;
+    border-radius: 10px;
+}.infoTxt{
+    position: absolute;
+    font-size: smaller;
+    top:35px;
+    left:20%;
+}.acceptbtn1{
+position : absolute;
+border:1px;
+top:45%; 
+left:35%; 
+
+}.takingnotes{
+    position: absolute;
+    border-bottom:60%;
+    width:65%;
+    left:20%;
+    top:20%;
+    background-color: rgb(209,212,213);
+    border-radius: 10px;
+}.btn1{
+    position: absolute;
+    border:none;
+    border-radius: 10px;
+    top:65%; 
+    left:40%;
+    background-color:rgb(209,212,213);
+    height:10%;
+    width:20%;
+}.takingdates{
+    position: absolute;
+    border : none;
+    border-radius: 10px;
+    background-color:rgb(209,212,213);
+    top:52%;
+    left:30%;
+    height:10%;
+    width:35%;
+}.btn2{
+    position: absolute;
+    border:none;
+    border-radius: 10px;
+    top:75%; 
+    left:39%;
+    background-color:rgb(209,212,213);
+    height:10%;
+    width:20%;
+    
+}
