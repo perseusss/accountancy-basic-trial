@@ -1,9 +1,10 @@
 body 
 {
-    margin : 0;
-    padding : 0;
-    display : flex;
-    flex-direction:column;
+    height:100%;
+       margin : 0;
+       padding : 0;
+       display : flex;
+       flex-direction:column;
 }
    .topBox
    {
@@ -13,17 +14,13 @@ body
        display: flex;
        justify-content: center;
    }
-   .titleMid
-   {
-   color:white;
-   position:absolute;
-   left:42%;
-   top:-11px;
-   font-family: Arial;
+   .midTxt{
+    text-align: center;
+    color:white;
    }
    .plusBtn
    {
-       position:absolute;
+         position:absolute;
          height: 40px;
          width:40px;
          background-color: black;
@@ -33,9 +30,9 @@ body
    }
    .plusPhoto
    {
-       margin-top:12px;
-       height: 30px;
-       width:30px;
+        margin-top:12px;
+        height: 30px;
+        width:30px;
    }
    .boxOne{
        margin: 58px;
@@ -49,23 +46,23 @@ body
    }
    .profilePhoto
    {
-     height: 90px;
-     width:90px;
-     margin-top: -520px;
-     margin-left:130px;
-     background-color:#292425;
+        height: 90px;
+        width:90px;
+        margin-top: -520px;
+        margin-left:130px;
+        background-color:#292425;
    }
    .line
    {
-   margin-top:135px;
-   width:140px;
-   height:0.3px;
-   background-color: white;
+        margin-top:135px;
+        width:140px;
+        height:0.3px;
+        background-color: white;
    }
    .userName
    {
-   margin-top:-34px;
-   text-align: center;
+       margin-top:-34px;
+       text-align: center;
    }
    .companyName
    {
@@ -91,110 +88,123 @@ body
    }
    .boxTwo
    {
-       margin: 58px;
-       height: 470px;
-       width: 600px;
-       padding: 10px;
-       margin-left:340px;
-       margin-top:-410px;
-       padding: 10px;
-       background-color:rgb(209,212,213) ;
-       border-radius: 20px;
+        margin: 58px;
+        height: 470px;
+        width: 600px;
+        padding: 10px;
+        margin-left:340px;
+        margin-top:-410px;
+        padding: 10px;
+        background-color:rgb(209,212,213) ;
+        border-radius: 20px;
    
    }
    .compName{
-    height: 45px;
-    width: 40%;
-    margin-left:40px;
-    margin-bottom:3%;
-    background-color:rgb(167,170,173) ;
-    border-radius: 10px;
-    padding-bottom:10px;
+        height: 45px;
+        width: 40%;
+        margin-left:40px;
+        margin-bottom:3%;
+        background-color:rgb(167,170,173) ;
+        border-radius: 10px;
+        padding-bottom:10px;
 
 }
   .calculator
    {   
-       position: absolute;
-       width:30%;
-       height:40%;
-       z-index:1; 
-       margin-top: 5%;
-       margin-left: 5%; 
+        position: absolute;
+        width:30%;
+        height:40%;
+        z-index:1; 
+        margin-top: 5%;
+        margin-left: 5%; 
 
    }
   .paymentInfo{
-    height: 170px;
-    width:180px;
-    margin-top:80px;
-    margin-left:83px;
-    background-color:white;
-    border-radius: 20px;
-    
+        height: 170px;
+        width:180px;
+        margin-top:80px;
+        margin-left:83px;
+        background-color:white;
+        border-radius: 20px;
   }.extrainfos{
-    position: absolute;
-    height: 80px;
-       width:240px;
-       margin-top:0%;
-       margin-left:40px;
-       background-color:white;
-       border-radius: 10px;
-       z-index:10;
+        position: absolute;
+        height: 80px;
+        width:240px;
+        margin-top:0%;
+        margin-left:40px;
+        background-color:white;
+        border-radius: 10px;
+        z-index:10;
 
   }
   .notes{
-      position: absolute;
-    height: 230px;
-       width:240px;
-       margin-top:7%;
-       margin-left:40px;
-       background-color:white;
-       border-radius: 10px;
-       z-index:10;
+        position: absolute;
+        height: 230px;
+        width:240px;
+        margin-top:7%;
+        margin-left:40px;
+        background-color:white;
+        border-radius: 10px;
+        z-index:10;
    }
    .buttons{
-    position:absolute;
-    height: 40px;
-    width:40px;
-    
-    right:35%;
-    top:17%;
-    border:none;    
+       
+        position:absolute;
+        height: 40px;
+        width:40px;
+        right:35%;
+        top:17%;
+        border:none;    
    }.getpaymentbtn{
-    position:absolute;
-    height: 70px;
-    width:70px;
-    background-color: rgb(209,212,213);
-    left:-90px;
-    top:17%;
-    border:none;
-    z-index: 10;
-    border-radius: 10px;
+        
+        position:absolute;
+        height: 70px;
+        width:70px;
+        background-color: rgb(209,212,213);
+        left:-90px;
+        top:17%;
+        border:none;
+        z-index: 10;
+        border-radius: 10px;
    }.topaymentbtn{
-    position:absolute;
-    height: 70px;
-    width:70px;
-    background-color: rgb(209,212,213);
-    left:-170px;
-    top:17%;
-    border:none;
-    z-index: 10;
-    border-radius: 10px;
+        
+        position:absolute;
+        height: 70px;
+        width:70px;
+        background-color: rgb(209,212,213);
+        left:-170px;
+        top:17%;
+        border:none;
+        z-index: 10;
+        border-radius: 10px;
    }.addnotesbtn{
+        
+        position:absolute;
+        height: 70px;
+        width:70px;
+        background-color: rgb(209,212,213);
+        right:6px;
+        top:17%;
+        border:none;
+        z-index: 10;
+        border-radius: 10px;
+   }.buttons{
     position:absolute;
-    height: 70px;
-    width:70px;
-    background-color: rgb(209,212,213);
-    right:-20px;
+    height: 0px;
+    width:5%;
+    background-color: black;
+    right:45%;
     top:17%;
     border:none;
     z-index: 10;
     border-radius: 10px;
+
    }.leftpaymentlist{
-    position: absolute;
-    height: 315px;
+       position: absolute;
+       height: 315px;
        width:240px;
-       margin-top:-32%;
-       margin-left:50%;
+       margin-top:-25.5%;
+       margin-left:40%;
        background-color:white;
        border-radius: 10px;
        z-index:10;
@@ -266,7 +276,7 @@ body
     cursor: pointer;
 }
 .titlePayment{
-text-align: center;
+    text-align: center;
 }.inputBox{
     position: absolute;
     height:13%;
@@ -282,10 +292,10 @@ text-align: center;
     top:35px;
     left:20%;
 }.acceptbtn1{
-position : absolute;
-border:1px;
-top:45%; 
-left:35%; 
+    position : absolute;
+    border:1px;
+    top:35%; 
+    left:35%; 
 
 }.takingnotes{
     position: absolute;
@@ -295,7 +305,9 @@ left:35%;
     top:20%;
     background-color: rgb(209,212,213);
     border-radius: 10px;
+    height:20%;
 }.btn1{
+    color: black;
     position: absolute;
     border:none;
     border-radius: 10px;
@@ -323,4 +335,16 @@ left:35%;
     height:10%;
     width:20%;
     
+}.submit3{
+
+    position: absolute;
+    border:none;
+    border-radius: 10px;
+    top:75%; 
+    left:39%;
+    background-color:rgb(209,212,213);
+    height:10%;
+    width:20%;
+    
+
 }

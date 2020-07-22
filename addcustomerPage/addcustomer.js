@@ -1,30 +1,28 @@
 //UI variables
-const form  = document.querySelector('#box');
-const input1 = document.querySelector('#compName');
-const input2 =document.querySelector('#compAdjactive');
-const input3 =document.querySelector('#phoneNumber');
-const input4 =document.querySelector('#taxNumber');
-const input5 =document.querySelector('#taxBuilding');
+var btnsave = document.querySelector('#savebtn');
+document.querySelector('#savebtn').addEventListener('click',postData);
+function postData(){
 
-const btnsave = document.querySelector('#savebtn');
+var inputcompname = document.querySelector('#compName').value;
+var inputcomptitle =document.querySelector('#compAdjactive').value;
+var inputphonenumber =document.querySelector('#phoneNumber').value;
+var inputtaxnumber =document.querySelector('#taxNumber').value;
+var inputtaxbuilding =document.querySelector('#taxBuilding').value;
 
-eventListener();
-
-function eventListener()
-{
-    form.addEventListener('submit',addNewItem);
-}
-
-function addNewItem(e)
-{
-    if(input1.value ===""){
-        alert("tam doldurun");
-    }else{
-   console.log(input1.value);
-   console.log(input2.value);
-   console.log(input3.value);
-   console.log(input4.value);
-   console.log(input5.value);
-    e.preventDefault();
+    const data = {
+        inputcompname,inputcomptitle,inputphonenumber,inputtaxnumber,inputtaxbuilding
     }
+var json = JSON.stringify(data);
+    console.log("json", json);
+var url = "http://192.168.1.152:3000/api/v1/customers/add";
+var xhr = new XMLHttpRequest();
+    xhr.open('POST',url,true);
+    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+    xhr.onload = function(){
+        var data = JSON.parse(xhr.response);
+            // console.log("data", data); 
+       
+        
+    }
+    xhr.send(json);
 }

@@ -39,5 +39,34 @@ window.onclick = function(event) {
     }else if(event.target == modal1){
         modal1.style.display ="none";
     }else if(event.target == modal2)
-        modal2.style.display = "none"
+        modal2.style.display = "none";
     }
+    document.querySelector('#submit3').addEventListener('click',postData);
+    function postData(){
+        
+        var customerID ="2";
+        var notes = document.getElementById("notes").value;
+        var date = document.getElementById("takedate").value;
+       
+        const data ={customerID, notes, date  }
+       
+     var json = JSON.stringify(data);
+    console.log(typeof data);
+    
+    console.log("json", json);
+    var url = "http://192.168.1.152:3000/api/v1/notes/add";
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST',url,true);
+    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+   
+    xhr.onload = function(){
+        var data = JSON.parse(xhr.response);
+         
+        // console.log("data", data)
+        // if(data.status == "success") {
+        //     console.log("success");
+        // } 
+    }
+    
+    xhr.send(json);
+}

@@ -92,7 +92,9 @@ margin-top:80px;
 .box{
     position:absolute;
     left:400px ;
-    bottom:35%;
+    bottom:15%;
+    width:10%;
+
 }
 .box input[type="text"]{
     border:0;

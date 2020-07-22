@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type = "text/css" href="payment.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <title>At Muhasebe</title>
    
 </head>
 <body id = "body">
 <div class = "topBox">
-  <h1 >At Muhasebe</h1>
+  <h1 class = "midTxt">At Muhasebe</h1>
   <button class = "plusBtn"><img class = "plusPhoto" src="plus.png" alt="plus"></button>
 </div>
+<div class="totally">
   <div class = "boxOne">
   <hr class = "line">  
   <p class = "userName">Seyit Erdoğan</p>
@@ -42,62 +43,63 @@
   <button id ="givingpaymentbtn"class = "topaymentbtn">ödeme yap</button>
   <button id ="addingidbtn"class = "addnotesbtn">not ekle</button>
 </div>
-  <div class="leftpaymentlist"><p>alınan ödeme listesi</p><hr><br><hr><br><hr><br><hr><br><hr><br><hr><br><hr></div>
+  <div class="leftpaymentlist"><p>alınan ödeme listesi</p></div>
 
 </div>
-
+<!-- ödeme al pop-up 'ı  -->
 <div id="myModal" class="modal">
   <div class="modal-content">
-    <span  id ="span0" class="close0"> <img class = "crossImage"height="15px" width="15px" src="criss-cross.png" alt="çarpı">&times;</span>
-    <h3 class = "titlePayment">Ödeme Al</h3>
-    <input type="number" class = "inputBox">
-    <p class = "infoTxt">ödeme tutarı</p>
-    <button class = "btn1">onayla</button>
+        <span  id ="span0" class="close0"> <img class = "crossImage"height="15px" width="15px" src="criss-cross.png" alt="çarpı">&times;</span>
+        <h3 class = "titlePayment">Ödeme Al</h3>
+        <input type="number" class = "inputBox">
+        <p class = "infoTxt">ödeme tutarı</p>
+        <input class = "takingdates" type="date" name="bday">
+        <button class = "btn1">Ödeme Al</button>
     <div class = "acceptbtn1">
-<!-- KADVLİ KDVSİZ seçenekleri için radio button ekleme işlemi -->
-      <input  type="radio" id="kdvli" name="age" value="30">
-      <label for="age1">KDV'li</label><br>
-         <input type="radio" id="kdvsiz" name="age" value="60">
-         <label for="age2">KDV'siz</label>
-      
+<!-- KDVLİ KDVSİZ seçenekleri için radio button ekleme işlemi -->
+          <input  type="radio" id="kdvli" name="age" value="30">
+          <label class = "kdvli1" for="age1">KDV'li</label><br>
+          <input type="radio" id="kdvsiz" name="age" value="60">
+          <label class = "kdvsiz1" for="age2">KDV'siz</label>
+       </div>
     </div>
   </div>
-</div>
 
+<!-- ödeme yap pop-up 'ı  -->
 <div id="myModal2" class="modal">
   <div class="modal-content">
-      <span id ="span1" class="close1"> <img class = "crossImage"height="15px" width="15px" src="criss-cross.png" alt="çarpı">&times;</span>
-      <h3 class = "titlePayment">ödeme yap</h3>
-      <p class = "infoTxt2">ödeme tutarı</p>
-      <input type="number" class = "inputBox">
-      <!-- ödeme tarihi almamıza yarar -->
-      <input class = "takingdates" type="date" name="bday">
-
-      <button class = "btn2">onayla</button>
-      
+        <span id ="span1" class="close1"> <img class = "crossImage"height="15px" width="15px" src="criss-cross.png" alt="çarpı">&times;</span>
+        <h3 class = "titlePayment">ödeme yap</h3>
+        <p class = "infoTxt2">ödeme tutarı</p>
+        <input type="number" class = "inputBox">
+        <!-- ödeme tarihi almamıza yarar -->
+        <input class = "takingdates" type="date" name="bday">
+        <button class = "btn2">Ödeme Yap</button>
      <!-- KDVLİ KDVSİZ seçenekleri için radio button ekleme işlemi -->
-
      <div class = "acceptbtn2">
-        <input  type="radio" id="kdvli" name="age" value="30">
-        <label for="age1">KDV'li</label><br>
-           <input  type="radio" id="kdvsiz" name="age" value="60">
-          <label for="age2">KDV'siz</label>
+          <input  type="radio" id="kdvli" name="age" value="30">
+          <label class = "kdvli2"for="age1">KDV'li</label><br>
+          <input  type="radio" id="kdvsiz" name="age" value="60">
+          <label class = "kdvsiz2" for="age2">KDV'siz</label>
+          
      </div>
   </div>
 </div>
 
+<!-- not ekleme pop-up'ı -->
 <div id="myModal3" class="modal">
   <div class="modal-content">
-    <span  id ="span2" class="close2"> <img class = "crossImage"height="15px" width="15px" src="criss-cross.png" alt="çarpı">&times;</span>
-    <h3 class = "titlePayment">Not Ekle</h3>
-    
+        <span  id ="span2" class="close2"> <img class = "crossImage"height="15px" width="15px" src="criss-cross.png" alt="çarpı">&times;</span>
+        <h3 class = "titlePayment">Not Ekle</h3>
     <div>
-      <p class = "textnote">not</p>
-      <input class = "takingnotes" type="text">
+        <p class = "textnote">not</p>
+        <input id = "notes" class = "takingnotes" type="text">
+        <button id  ="submit3" class="submit3">kaydet</button>
+        <input id = "takedate" class = "takingdates" type="date" name="bday">
     </div>
   </div>
 </div>
-<script type="text/javascript" src="script.js" defer></script>
+                    <script type="text/javascript" src="script.js" defer></script>
 </body>
 
 </html>
