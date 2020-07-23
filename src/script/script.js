@@ -48,7 +48,9 @@ window.onclick = function(event) {
         var notes = document.getElementById("notes").value;
         var date = document.getElementById("takedate").value;
        
-        const data ={customerID, notes, date  }
+        const data ={
+            customerID, notes, date
+                    }
        
      var json = JSON.stringify(data);
     console.log(typeof data);
@@ -56,17 +58,16 @@ window.onclick = function(event) {
     console.log("json", json);
     var url = "http://192.168.1.152:3000/api/v1/notes/add";
     var xhr = new XMLHttpRequest();
-    xhr.open('POST',url,true);
-    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
-   
-    xhr.onload = function(){
-        var data = JSON.parse(xhr.response);
-         
-        // console.log("data", data)
-        // if(data.status == "success") {
-        //     console.log("success");
-        // } 
-    }
-    
-    xhr.send(json);
+        xhr.open('POST',url,true);
+        xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+        xhr.onload = function(){
+            var data = JSON.parse(xhr.response);
+            console.log(xhr.response);
+            // console.log("data", data)
+            // if(data.status == "success") {
+            //     console.log("success");
+            // } 
+        }
+        
+        xhr.send(json);
 }
